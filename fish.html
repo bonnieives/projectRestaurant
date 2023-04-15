@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>The M Restaurant - Fish</title>
+    <link href="navBar.css" rel="stylesheet" />
+    <link href="header.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
+    <link href="menusBody.css" rel="stylesheet" />
+    <link href="cart.css" rel="stylesheet" />
+    <!-- Declaring the new font used for this project -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <!-- Icon for the title -->
+    <link rel="icon" type="image/x-icon" href="title_logo.png" />
+</head>
+<body>
+    <!-- Lets separate the header and decide what will come around here -->
+    <header>
+        <img class="header-logo" src="site_name_logo_header.png" />
+        <p>You know you want to experience the best food by the shore</p>
+    </header>
+    <!-- Declaring the navbar. It will be changed later. -->
+    <section>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropdownMenu" href="#" onclick="show_hide()">
+                    Menu
+                </a>
+            </div>
+            <a href="order.html">Order</a>
+            <div class="shopCart">
+                <a class="dropdownCart" href="#" onclick="show_hide2()">
+                    My Cart
+                </a>
+            </div>
+            <a href="login.html">Login</a>
+        </nav>
+        <div class="cartContent">
+            <table class="tbl">
+            </table>
+            <h3 class="totalCart">Empty cart</h3>
+        </div>
+        <div class="menuContent">
+            <a href="salad.html">Salad</a>
+            <a href="chicken.html">Chicken</a>
+            <a href="steak.html">Steak</a>
+            <a href="fish.html">Fish</a>
+            <a href="drink.html">Drinks</a>
+        </div>
+    </section>
+    <article>
+        <!-- First Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="19">
+                    <div class="front">
+                        <img class="menuImage" src="fish/pexels-francesco-ungaro-1602828.jpg" id="fig19" />
+                        <figcaption class="dish">Grilled Fish and Vegetables</figcaption>
+                        <p class="dishPrice">$16.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">A set of fishes stripes with vegetables presented on a griller on your table</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="19" title="Grilled Fish and Vegetables" price="16.99" figId="fig19">Add to Cart</button>
+        </div>
+        <!-- End of the first Product -->
+        <!-- Second Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="20">
+                    <div class="front">
+                        <img class="menuImage" src="fish/pexels-valeria-boltneva-688803.jpg" id="fig20" />
+                        <figcaption class="dish">Tilapia Gioza</figcaption>
+                        <p class="dishPrice">$12.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Stuffed gioza with tilapia, vegetables and seasoned with sweet sour sauce</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="20" title="Tilapia Gioza" price="12.99" figId="fig20">Add to Cart</button>
+        </div>
+        <!-- End of the Second Product -->
+        <!-- Third Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="21">
+                    <div class="front">
+                        <img class="menuImage" src="fish/pexels-jay-abrantes-343812.jpg" id="fig21" />
+                        <figcaption class="dish">Tropical Trout</figcaption>
+                        <p class="dishPrice">$17.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Fried trout with rolled vegetables, nuts and tropical sauce</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="21" title="Tropical Trout" price="17.99" figId="fig21">Add to Cart</button>
+        </div>
+        <!-- End of the Third Product -->
+        <!-- Fourth Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="22">
+                    <div class="front">
+                        <img class="menuImage" src="fish/pexels-krisztina-papp-2374946.jpg" id="fig22" />
+                        <figcaption class="dish">Fish Steak</figcaption>
+                        <p class="dishPrice">$21.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Fried trout with rolled vegetables, nuts and tropical sauce</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="22" title="Fish Steak" price="21.99" figId="fig22">Add to Cart</button>
+        </div>
+        <!-- End of the Fourth Product -->
+        <!-- Fifth Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="23">
+                    <div class="front">
+                        <img class="menuImage" src="fish/pexels-dana-tentis-262959.jpg" id="fig23" />
+                        <figcaption class="dish">Fish by the Beach</figcaption>
+                        <p class="dishPrice">$19.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Fried fish steak with cherry tomatoes, letuce, avocado, dijon sauce, and lemon</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="23" title="Fish by the Beach" price="19.99" figId="fig23">Add to Cart</button>
+        </div>
+        <!-- End of the Fifth Product -->
+        <!-- Fifth Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="24">
+                    <div class="front">
+                        <img class="menuImage" src="fish/pexels-pixabay-248444.jpg" id="fig24" />
+                        <figcaption class="dish">Chef's Sushi</figcaption>
+                        <p class="dishPrice">$25.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Chef's sushi with shoyu sauce</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="24" title="Chef's Sushi" price="25.99" figId="fig24">Add to Cart</button>
+        </div>
+        <!-- End of the Fifth Product -->
+    </article>
+    <!-- The scripts -->
+    <script src="script.js"></script>
+    <script src="flipCard.js"></script>
+    <script src="dropdownClick.js"></script>
+    <footer>
+        <div class="copyrights">
+            <p><img id="footerImg" src="title_logo.png" /></p>
+            <p>&#x24B8 Copyrights by Bonnie Ives de Castro Nunes</p>
+        </div>
+    </footer>
+</body>
+</html>

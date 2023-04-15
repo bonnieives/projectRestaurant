@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>The M Restaurant - Chicken</title>
+    <link href="navBar.css" rel="stylesheet" />
+    <link href="header.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
+    <link href="menusBody.css" rel="stylesheet" />
+    <link href="cart.css" rel="stylesheet" />
+    <!-- Declaring the new font used for this project -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <!-- Icon for the title -->
+    <link rel="icon" type="image/x-icon" href="title_logo.png" />
+</head>
+<body>
+    <!-- Lets separate the header and decide what will come around here -->
+    <header>
+        <img class="header-logo" src="site_name_logo_header.png" />
+        <p>You know you want to experience the best food by the shore</p>
+    </header>
+    <!-- Declaring the navbar. It will be changed later. -->
+    <section>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropdownMenu" href="#" onclick="show_hide()">
+                    Menu
+                </a>
+            </div>
+            <a href="order.html">Order</a>
+            <div class="shopCart">
+                <a class="dropdownCart" href="#" onclick="show_hide2()">
+                    My Cart
+                </a>
+            </div>
+            <a href="login.html">Login</a>
+        </nav>
+        <div class="cartContent">
+            <table class="tbl">
+            </table>
+            <h3 class="totalCart">Empty cart</h3>
+        </div>
+        <div class="menuContent">
+            <a href="salad.html">Salad</a>
+            <a href="chicken.html">Chicken</a>
+            <a href="steak.html">Steak</a>
+            <a href="fish.html">Fish</a>
+            <a href="drink.html">Drinks</a>
+        </div>
+    </section>
+    <article>
+        <!-- First Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="7">
+                    <div class="front">
+                        <img class="menuImage" src="chicken/pexels-shantanu-pal-2679501.jpg" id="fig7" />
+                        <figcaption class="dish">Chicken Stew</figcaption>
+                        <p class="dishPrice">$13.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Stew made on chicken with gravy sauce, coriander, and lemon</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="7" title="Chicken Stew" price="15.99" figId="fig7">Add to Cart</button>
+        </div>
+        <!-- End of the first Product -->
+        <!-- Second Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="8">
+                    <div class="front">
+                        <img class="menuImage" src="chicken/pexels-rajesh-tp-1624487.jpg" id="fig8" />
+                        <figcaption class="dish">International Chicken</figcaption>
+                        <p class="dishPrice">$16.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Chicken drummets, fine rice, carrots, peas, coriander, and tomato sauce</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="8" title="International Chicken" price="16.99" figId="fig8">Add to Cart</button>
+        </div>
+        <!-- End of the Second Product -->
+        <!-- Third Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="9">
+                    <div class="front">
+                        <img class="menuImage" src="chicken/pexels-valeria-boltneva-1860204.jpg" id="fig9" />
+                        <figcaption class="dish">Tropical Chicken</figcaption>
+                        <p class="dishPrice">$17.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Sliced chicken breast with sesame, salad with arugula, cherry tomato, cucumbre, carrot, and lemon</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="9" title="Tropical Chicken" price="17.99" figId="fig9">Add to Cart</button>
+        </div>
+        <!-- End of the Third Product -->
+        <!-- Fourth Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="10">
+                    <div class="front">
+                        <img class="menuImage" src="chicken/pexels-engin-akyurt-2673353.jpg" id="fig10" />
+                        <figcaption class="dish">Brazilian Chicken</figcaption>
+                        <p class="dishPrice">$15.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Full chicken, brazilian sauce, and rosemary</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="10" title="Brazilian Chicken" price="15.99" figId="fig10">Add to Cart</button>
+        </div>
+        <!-- End of the Fourth Product -->
+        <!-- Fifth Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="11">
+                    <div class="front">
+                        <img class="menuImage" src="chicken/pexels-nyara-aquino-5643427.jpg" id="fig11" />
+                        <figcaption class="dish">Chicken Sticks</figcaption>
+                        <p class="dishPrice">$11.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Chicken sticks with lemon sauce and coriander</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="11" title="Chicken Sticks" price="11.99" figId="fig11">Add to Cart</button>
+        </div>
+        <!-- End of the Fifth Product -->
+        <!-- Sixth Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="12">
+                    <div class="front">
+                        <img class="menuImage" src="chicken/pexels-pixabay-60616.jpg" id="fig12" />
+                        <figcaption class="dish">Chicken Drumsticks</figcaption>
+                        <p class="dishPrice">$11.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Deep fried chichen drumstick and letuce</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="12" title="Chicken Drumsticks" price="11.99" figId="fig12">Add to Cart</button>
+        </div>
+        <!-- End of the Sixth Product -->
+    </article>
+    <!-- The scripts -->
+    <script src="script.js"></script>
+    <script src="flipCard.js"></script>
+    <script src="dropdownClick.js"></script>
+    <footer>
+        <div class="copyrights">
+            <p><img id="footerImg" src="title_logo.png" /></p>
+            <p>&#x24B8 Copyrights by Bonnie Ives de Castro Nunes</p>
+        </div>
+    </footer>
+</body>
+</html>

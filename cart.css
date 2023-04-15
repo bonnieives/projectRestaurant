@@ -1,0 +1,138 @@
+/* The products added to the cart is included as a row into a table */
+td {
+    border-bottom: 2px solid black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border-right: 2px solid black;
+    background: #DAAE18;
+}
+.shopCartDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.tbl {
+    padding: 10px;
+    font-family: "Comfortaa";
+    font-weight: bold;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.shopCartNew{
+    text-align: center;
+}
+.totalCart {
+    font-family: "Comfortaa";
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+#placeOrder {
+    text-decoration: underline;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+#placeOrder:hover {
+    filter:opacity(0.8);
+}
+/* Styling the buttons */
+.addButton, .subButton, .removeButton {
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: #2B2000;
+    border-radius: 5px;
+    margin: 0px;
+    width: 100%;
+}
+.addButton:hover, .subButton:hover, .removeButton:hover {
+    transition: none;
+    filter: opacity(0.5);
+    background-color: white;
+}
+/* order page */
+.orderImage{
+    max-block-size: 70px;
+    border-radius: 10px;
+}
+#orderTable {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#orderTable td{
+    text-align: center;
+    font-family: "Comfortaa";
+    font-weight: bold;
+}
+#orderPage {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: rgba(191, 160, 29, 0.1);
+}
+/* Dropdown for the shopping cart */
+.shopCart{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+a.checkout{
+    padding: 5px 10px;
+    border:2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #FBBD12;
+    color: black;
+    font-family: "Comfortaa";
+    font-weight: bold;
+    box-shadow: rgba(0,0,0,0.3) 3px 3px;
+    margin-left:auto;
+    margin-right: auto;
+    width: 60%;
+}
+a.dropdownCart{
+    font-weight: bold;
+    color: #2B2000;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-family: 'Comfortaa';
+    background-color: #FBBD12;
+    font-size: 16px;
+    cursor: pointer;
+}
+.dropdownCart:hover {
+    color: #FBBD12;
+    background-color: #2B2200;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.cartContent {
+    background-color: #FBBD12;
+    display: none;
+    width: auto;
+    border-top: 1px solid #2B2200;
+    padding-bottom: 10px;
+    text-align:center;
+}
+.cartContent a{
+    float: none;
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+    color: #2B2200;
+    font-family: "Comfortaa";
+    font-weight: bold;
+    padding: 10px 10px;
+}
+@media screen and (max-width: 960px) {
+    #orderPage{
+        display: block;
+    }
+}

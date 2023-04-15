@@ -1,0 +1,73 @@
+/* The footer is not the same for all the pages */
+/* Index page has the bigger footer */
+/* Footer for index and other pages others */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #281d00;
+    font-family: 'Comfortaa';
+    color: #FBBD12;
+    font-size: 15px;
+    text-align: center;
+    padding: 30px;
+    height: 100%;
+}
+/* Footer index */
+#index {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 100px;
+    background-color: #281d00;
+    font-family: 'Comfortaa';
+    color: #FBBD12;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 0 20px 10px;
+}
+/* Copyrights */
+.copyrights {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+img#footerImg {
+    height: 5%;
+    width: 5%;
+}
+.copyrights{
+    padding: 20px 0px;
+}
+.copyrights > p {
+    width: 100%;
+    margin: 0;
+}
+/* Sections into the footer exclusive for the index */
+/* Table */
+#tableFooter{
+    text-align: center;
+    width: 100%;
+    align-content: center;
+    margin: 0 auto;
+}
+#tableFooter td{
+    padding-bottom: 5px;
+    background-color: transparent;
+}
+/* Contact us */
+input {
+    font-family: "Comfortaa";
+    width: 80%;
+    margin-bottom: 5px;
+}
+textarea {
+    font-family: "Comfortaa";
+    width: 81%;
+}
+button {
+    font-family: "Comfortaa";
+    width: 83%;
+}
+button:hover {
+    background-color: #FBBD12;
+    color: #2B2000;
+    transition: all 0.5s ease;
+}

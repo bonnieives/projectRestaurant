@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>The M Restaurant - Order Page</title>
+    <link href="navBar.css" rel="stylesheet" />
+    <link href="header.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
+    <link href="cart.css" rel="stylesheet" />
+    <!-- Declaring the new font used for this project -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <!-- Icon for the title -->
+    <link rel="icon" type="image/x-icon" href="title_logo.png" />
+</head>
+<body>
+    <!-- Lets separate the header and decide what will come around here -->
+    <header>
+        <img class="header-logo" src="site_name_logo_header.png" />
+        <p>You know you want to experience the best food by the shore</p>
+    </header>
+    <!-- Declaring the navbar. It will be changed later. -->
+    <section>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropdownMenu" href="#" onclick="show_hide()">
+                    Menu
+                </a>
+            </div>
+            <a href="order.html">Order</a>
+        </nav>
+        <div class="menuContent">
+            <a href="salad.html">Salad</a>
+            <a href="chicken.html">Chicken</a>
+            <a href="steak.html">Steak</a>
+            <a href="fish.html">Fish</a>
+            <a href="drink.html">Drinks</a>
+        </div>
+    </section>
+    <section id="orderPage">
+        <table id="orderTable">
+            <tr>
+            </tr>
+        </table>
+        <div class="shopCartDiv">
+            <div class="shopCartNew">
+                <h3 class="totalCart">Empty cart</h3>
+            </div>
+        </div>
+    </section>
+    <script src="dropdownClick.js"></script>
+    <script src="orderScript.js"></script>
+    <footer>
+        <div class="copyrights">
+            <p><img id="footerImg" src="title_logo.png" /></p>
+            <p>&#x24B8 Copyrights by Bonnie Ives de Castro Nunes</p>
+        </div>
+    </footer>
+</body>
+</html>

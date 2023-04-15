@@ -1,0 +1,19 @@
+/* The header is the same for all other pages. */
+/* That's why every page is linked to this css */
+.header-logo {
+    width: 100%;
+}
+header {
+    text-align: center;
+    background-color: #2B2000;
+    width: 100%;
+    margin: 0;
+}
+header > p {
+    padding-bottom: 10px;
+    color: #FBBD12;
+    margin: 0;
+    font-family: 'Comfortaa';
+    font-size: 2vw;
+    width: 100%;
+}

@@ -1,0 +1,141 @@
+/* The navigation bar is almos the same for every page */
+/* There is only some small changes between some of them */
+nav{
+    background-color: #FBBD12;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden; 
+    display: inline-flex;
+    width: 100%;
+}
+nav > a{
+    color: #2B2000;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-family: 'Comfortaa';
+    font-weight: bold;
+}
+nav > a:hover{
+    color: #FBBD12;
+    background-color:#2B2200;
+    text-decoration: none;
+    border-radius: 0 0 15px 15px;
+    transition: all 0.3s ease;
+}
+/* Dropdown fo the menu */
+.dropdown{
+    padding: 10px 5px;
+}
+a.dropdownMenu{
+    font-weight: bold;
+    color: #2B2000;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-family: 'Comfortaa';
+    background-color: #FBBD12;
+    font-size: 16px;
+    cursor: pointer;
+}
+.dropdownMenu:hover {
+    color: #FBBD12;
+    background-color: #2B2200;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.menuContent {
+    background-color: #FBBD12;
+    display: none;
+    border-top: 1px solid #2B2200;
+    width: auto;
+    text-align: center;
+}
+.menuContent a{
+    float: none;
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+    color: #2B2200;
+    font-family: "Comfortaa";
+    font-weight: bold;
+    padding: 10px 10px;
+}
+.menuContent a:hover{
+    color: #FBBD12;
+    background-color: #2B2200;
+    border-radius: 0 0 15px 15px;
+    transition: all 0.3s ease;
+}
+/* End of dropdown menu */
+
+/* The cart styling has its own css file cart.css */
+
+/* Media query for the navigation bar and for the cart */
+@media screen and (max-width: 960px) {
+
+    nav{
+        display: block;
+        padding: 10px 0px;
+        margin: 0;
+    }
+    .menuContent > a {
+        display: block;
+        width: 100%;
+    }
+    nav a{
+        margin: 0;
+        font-size: 20px;
+        font-size: 20px;
+    }
+    nav > a:hover {
+        color: #2B2200;
+        background-color: #FBBD12;
+    }
+    a.dropdownMenu{
+        font-size: 20px;
+    }
+    .dropdownMenu:hover {
+        color: #2B2200;
+        background-color: #FBBD12;
+    }
+    a.dropdownCart{
+        position: relative;
+        font-size: 20px;
+    }
+    .dropdownCart:hover {
+        color: #2B2200;
+        background-color: #FBBD12;
+    }
+    .cartContent{
+        position: relative;
+        border: none;
+        border-radius: 0px 0px 20px 20px;
+        filter: sepia(0.6);
+    }
+    .menuContent{
+        position: relative;
+        filter: sepia(0.6);
+        border: none;
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+        border-top: 1px solid black;
+    }
+    .menuContent a{
+        width: 100%;
+        text-align: center;
+        padding: 10px 0px;
+    }
+    .menuContent a:hover{
+        color: #2B2200;
+        background-color: #FBBD12;
+        margin: 0px;
+        align-items: center;
+    }
+    .shopCart:hover .cartContent {
+        pointer-events: none;
+    }
+    a.dropdownCart:hover {
+        color: #2B2200;
+        background-color: #FBBD12;
+    }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>The M Restaurant - Home</title>
+    <link href="index.css" rel="stylesheet" />
+    <link href="navBar.css" rel="stylesheet" />
+    <link href="header.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
+    <link href="cart.css" rel="stylesheet" />
+    <!-- Declaring the new font used for this project -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <!-- Icon for the title -->
+    <link rel="icon" type="image/x-icon" href="title_logo.png" />
+</head>
+<body>
+    <!-- Lets separate the header and decide what will come around here -->
+    <header>
+        <img class="header-logo" src="site_name_logo_header.png" />
+        <p>You know you want to experience the best food by the shore</p>
+    </header>
+    <!-- Declaring the navbar. It will be changed later. -->
+    <section>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropdownMenu" onclick="show_hide()">
+                    Menu
+                </a>
+            </div>
+            <a href="order.html">Order</a>
+            <div class="shopCart">
+                <a class="dropdownCart" onclick="show_hide2()">
+                    My Cart
+                </a>
+            </div>
+            <a href="login.html">Login</a>
+        </nav>
+        <div class="cartContent">
+            <table class="tbl">
+            </table>
+            <h3 class="totalCart">Empty cart</h3>
+        </div>
+        <div class="menuContent">
+            <a href="salad.html">Salad</a>
+            <a href="chicken.html">Chicken</a>
+            <a href="steak.html">Steak</a>
+            <a href="fish.html">Fish</a>
+            <a href="drink.html">Drinks</a>
+        </div>
+    </section>
+    <!-- The article is used to have a friendly structure and divide the session. -->
+    <article id="articleIndex">
+        <!-- First row -->
+        <section>
+            <h1>The Restaurant</h1>
+            <p>Our restaurant was born by the motivation of a couple who loved to taste a fine food while looking at the sea waves.</p>
+            <p>In our place you will have the empathy and efficicy from our servers. Our kitchen uses high quality fresh and natural ingredients that can be find in our lands. Instead of the production line, each dish is prepared individually by only one cooker.</p>
+            <p>The concept is based on the Comfort Food, the food that comforts, so you can feel the ingredients individually in your palate making you feel specia while you eat.</p>
+        </section>
+        <section>
+            <img src="home/pexels-burak-the-weekender-704623.jpg" />
+        </section>
+        <!-- First divider -->
+        <div class="astrodivider"><div class="astrodividermask"></div><span><i>M</i></span></div>
+        <!-- Second row -->
+        <section class="secondRow">
+            <img src="home/cassie-gallegos--I9QvRBsvP0-unsplash.jpg" />
+        </section>
+        <section>
+            <h1>The Ambience</h1>
+            <p>We believe the confort should not only be expressed by the food. Because of that we place every table with the ocean view so your special ocasion will be memorable. The music we play is always a soft Bossa Nova so you can spent a quality time with your company.</p>
+        </section>
+        <!-- Second divider -->
+        <div class="astrodivider"><div class="astrodividermask"></div><span><i>M</i></span></div>
+        <!-- Third row -->
+        <section>
+            <h1>The Food's Presentation</h1>
+            <p>We want you to know we took care of each detail of your experience so our dishes are built with delicacy and care. The position of each ingredient is thought so you can harmonize it with your moment.</p>
+        </section>
+        <section>
+            <img src="home/eduardo-roda-lopes-mNefYU7uRbk-unsplash.jpg" />
+        </section>
+        <!-- Third divider -->
+        <div class="astrodivider"><div class="astrodividermask"></div><span><i>M</i></span></div>
+        <!-- Fourth row -->
+        <section>
+            <video autoplay loop muted>
+                <source src="home/production ID_4088851.mp4" type="video/mp4" />
+            </video>
+        </section>
+        <section>
+            <h1>Saturday With Live Music</h1>
+            <p>We want you to know we took care of each detail of your experience so our dishes are built with delicacy and care. The position of each ingredient is thought so you can harmonize it with your moment.</p>
+        </section>
+    </article>
+    <!-- This script is used to  -->
+    <script src="script.js"></script>
+    <script src="dropdownClick.js"></script>
+    <!-- Starting the footer -->
+    <footer id="index">
+        <div class="location">
+            <h3>Location</h3>
+            <p>1234 Hobbinton</p>
+            <p>The Shire, Middle Earth</p>
+        </div>
+        <div class="openingHours">
+            <h3>Opening hours</h3>
+            <table id="tableFooter">
+                <tr>
+                    <td>Monday to Thursday</td>
+                    <td>11am to 11pm</td>
+                </tr>
+                <tr>
+                    <td>Friday and Saturday</td>
+                    <td>12am to 12am</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>11am to 4pm</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h3>Contact Us</h3>
+            <form>
+                <input type="text" name="name" placeholder="Your name" />
+                <input type="text" name="mail" placeholder="Your e-mail" />
+                <textarea name="textArea" placeholder="Send us a message"></textarea>
+            </form>
+            <button type="submit">Submit</button>
+        </div>
+        <div class="copyrights">
+            <p><img id="footerImg" src="title_logo.png" /></p>
+            <p>&#x24B8 Copyrights by Bonnie Ives de Castro Nunes</p>
+        </div>
+    </footer>
+</body>
+</html>

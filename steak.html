@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>The M Restaurant - Steak</title>
+    <link href="navBar.css" rel="stylesheet" />
+    <link href="header.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
+    <link href="menusBody.css" rel="stylesheet" />
+    <link href="cart.css" rel="stylesheet" />
+    <!-- Declaring the new font used for this project -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <!-- Icon for the title -->
+    <link rel="icon" type="image/x-icon" href="title_logo.png" />
+</head>
+<body>
+    <!-- Lets separate the header and decide what will come around here -->
+    <header>
+        <img class="header-logo" src="site_name_logo_header.png" />
+        <p>You know you want to experience the best food by the shore</p>
+    </header>
+    <!-- Declaring the navbar. It will be changed later. -->
+    <section>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropdownMenu" href="#" onclick="show_hide()">
+                    Menu
+                </a>
+            </div>
+            <a href="order.html">Order</a>
+            <div class="shopCart">
+                <a class="dropdownCart" href="#" onclick="show_hide2()">
+                    My Cart
+                </a>
+            </div>
+            <a href="login.html">Login</a>
+        </nav>
+        <div class="cartContent">
+            <table class="tbl">
+            </table>
+            <h3 class="totalCart">Empty cart</h3>
+        </div>
+        <div class="menuContent">
+            <a href="salad.html">Salad</a>
+            <a href="chicken.html">Chicken</a>
+            <a href="steak.html">Steak</a>
+            <a href="fish.html">Fish</a>
+            <a href="drink.html">Drinks</a>
+        </div>
+    </section>
+    <article>
+        <!-- First Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="13">
+                    <div class="front">
+                        <img class="menuImage" src="steak/pexels-terje-sollie-299351.jpg" id="fig13" />
+                        <figcaption class="dish">Ambrosian Steak</figcaption>
+                        <p class="dishPrice">$18.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Medium rare fried steak with banana dough and ambrosian sauce</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="13" title="Ambrosian Steak" price="18.99" figId="fig13">Add to Cart</button>
+        </div>
+        <!-- End of the first Product -->
+        <!-- Second Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="14">
+                    <div class="front">
+                        <img class="menuImage" src="steak/pexels-lukas-1352262.jpg" id="fig14" />
+                        <figcaption class="dish">Fillet Steak</figcaption>
+                        <p class="dishPrice">$21.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Fried fillet steak with gravy sauce, cherry tomatoes and french fries</span>
+                    </div>
+                </div>
+                <button class="button" type="button" btnId="14" title="Fillet Steak" price="21.99" figId="fig14">Add to Cart</button>
+            </div>
+        </div>
+        <!-- End of the Second Product -->
+        <!-- Third Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="15">
+                    <div class="front">
+                        <img class="menuImage" src="steak/pexels-lukas-1352269.jpg" id="fig15" />
+                        <figcaption class="dish">White Steak</figcaption>
+                        <p class="dishPrice">$19.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Fried steak with roasted seasoned potatoes and white sauce</span>
+                    </div>
+                </div>
+                <button class="button" type="button" btnId="15" title="White Steak" price="19.99" figId="fig15">Add to Cart</button>
+            </div>
+        </div>
+        <!-- End of the Third Product -->
+        <!-- Fourth Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="16">
+                    <div class="front">
+                        <img class="menuImage" src="steak/pexels-viktor-tasnadi-341048.jpg" id="fig16" />
+                        <figcaption class="dish">Cherry Steak</figcaption>
+                        <p class="dishPrice">$20.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Fried steak with mashed potatoes, rosemary, and cherry sauce</span>
+                    </div>
+                </div>
+                <button class="button" type="button" btnId="16" title="Cherry Steak" price="20.99" figId="fig16">Add to Cart</button>
+            </div>
+        </div>
+        <!-- End of the Fourth Product -->
+        <!-- Fifth Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="17">
+                    <div class="front">
+                        <img class="menuImage" src="steak/pexels-valeria-boltneva-1307658.jpg" id="fig17" />
+                        <figcaption class="dish">Steak Pomegranade</figcaption>
+                        <p class="dishPrice">$17.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Fried steak with broccoli salad, peas and corn, with pomegranade sauce</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="17" title="Steak Pomegranade" price="17.99" figId="fig17">Add to Cart</button>
+        </div>
+        <!-- End of the Fifth Product -->
+        <!-- Sixth Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="18">
+                    <div class="front">
+                        <img class="menuImage" src="steak/pexels-malidate-van-769289.jpg" id="fig18" />
+                        <figcaption class="dish">Steak Dijon</figcaption>
+                        <p class="dishPrice">$20.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Fried steak with seasoned pod, carrots, broccoli, cauliflower, tomatoes, with dijon sauce</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="18" title="Steak Dijon" price="20.99" figId="fig18">Add to Cart</button>
+        </div>
+        <!-- End of the Sixth Product -->
+    </article>
+    <!-- The scripts -->
+    <script src="script.js"></script>
+    <script src="flipCard.js"></script>
+    <script src="dropdownClick.js"></script>
+    <footer>
+        <div class="copyrights">
+            <p><img id="footerImg" src="title_logo.png" /></p>
+            <p>&#x24B8 Copyrights by Bonnie Ives de Castro Nunes</p>
+        </div>
+    </footer>
+</body>
+</html>

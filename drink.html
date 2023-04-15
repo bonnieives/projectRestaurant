@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>The M Restaurant - Drinks</title>
+    <!-- The used stylesheets -->
+    <link href="navBar.css" rel="stylesheet" />
+    <link href="header.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
+    <link href="menusBody.css" rel="stylesheet" />
+    <link href="cart.css" rel="stylesheet" />
+    <!-- Declaring the new font used for this project -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <!-- Icon for the title -->
+    <link rel="icon" type="image/x-icon" href="title_logo.png" />
+</head>
+<body>
+    <!-- Lets separate the header and decide what will come around here -->
+    <header>
+        <img class="header-logo" src="site_name_logo_header.png" />
+        <p>You know you want to experience the best food by the shore</p>
+    </header>
+    <!-- Declaring the navbar. It will be changed later. -->
+    <section>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropdownMenu" href="#" onclick="show_hide()">
+                    Menu
+                </a>
+            </div>
+            <a href="order.html">Order</a>
+            <div class="shopCart">
+                <a class="dropdownCart" href="#" onclick="show_hide2()">
+                    My Cart
+                </a>
+            </div>
+            <a href="login.html">Login</a>
+        </nav>
+        <div class="cartContent">
+            <table class="tbl">
+            </table>
+            <h3 class="totalCart">Empty cart</h3>
+        </div>
+        <div class="menuContent">
+            <a href="salad.html">Salad</a>
+            <a href="chicken.html">Chicken</a>
+            <a href="steak.html">Steak</a>
+            <a href="fish.html">Fish</a>
+            <a href="drink.html">Drinks</a>
+        </div>
+    </section>
+    <article>
+        <!-- First Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="25">
+                    <div class="front">
+                        <img class="menuImage" src="drinks/pexels-sonja-maric-2707972.jpg" id="fig25" />
+                        <figcaption class="dish">Beer</figcaption>
+                        <p class="dishPrice">$5.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">An old and good mug of handcrafted beer</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="25" title="Beer" price="5.99" figId="fig25">Add to Cart</button>
+        </div>
+        <!-- End of the first Product -->
+        <!-- Second Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="26">
+                    <div class="front">
+                        <img class="menuImage" src="drinks/pexels-pixabay-51365.jpg" id="fig26" />
+                        <figcaption class="dish">Whisky</figcaption>
+                        <p class="dishPrice">$8.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">One glass of 12 years old Scotish wisky on you, the other glass is on us</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="26" title="Whisky" price="8.99" figId="fig26">Add to Cart</button>
+        </div>
+        <!-- End of the Second Product -->
+        <!-- Third Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="27">
+                    <div class="front">
+                        <img class="menuImage" src="drinks/pexels-valeria-boltneva-1123260.jpg" id="fig27" />
+                        <figcaption class="dish">Champagne</figcaption>
+                        <p class="dishPrice">$11.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Our champagne comes from the right region on France, one glass on you, other glass on us</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="27" title="Champagne" price="11.99" figId="fig27">Add to Cart</button>
+        </div>
+        <!-- End of the Third Product -->
+        <!-- Fourth Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="28">
+                    <div class="front">
+                        <img class="menuImage" src="drinks/pexels-toni-cuenca-616833.jpg" id="fig28" />
+                        <figcaption class="dish">Green Smooth</figcaption>
+                        <p class="dishPrice">$5.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Green smooth made of green apples, cucumber and cabbage</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="28" title="Green Smooth" price="5.99" figId="fig28">Add to Cart</button>
+        </div>
+        <!-- End of the Fourth Product -->
+        <!-- Fifth Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="29">
+                    <div class="front">
+                        <img class="menuImage" src="drinks/pexels-chevanon-photography-302899.jpg" id="fig29" />
+                        <figcaption class="dish">Creamy Coffee</figcaption>
+                        <p class="dishPrice">$4.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Good coffe made with brazillian beans and homemade soy cream</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="29" title="Creamy Coffee" price="4.99" figId="fig29">Add to Cart</button>
+        </div>
+        <!-- End of the Fifth Product -->
+        <!-- Fifth Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="30">
+                    <div class="front">
+                        <img class="menuImage" src="drinks/pexels-lisa-fotios-109275.jpg" id="fig30" />
+                        <figcaption class="dish">Bloody Mary</figcaption>
+                        <p class="dishPrice">$7.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">A good Bloody Mary made with vodca, tomato juice, lemon juice, tobasco, and pepper</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="30" title="Bloody Mary" price="7.99" figId="fig30">Add to Cart</button>
+        </div>
+        <!-- End of the Fifth Product -->
+    </article>
+    <!-- The scripts -->
+    <script src="script.js"></script>
+    <script src="flipCard.js"></script>
+    <script src="dropdownClick.js"></script>
+    <footer>
+        <div class="copyrights">
+            <p><img id="footerImg" src="title_logo.png" /></p>
+            <p>&#x24B8 Copyrights by Bonnie Ives de Castro Nunes</p>
+        </div>
+    </footer>
+</body>
+</html>

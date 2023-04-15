@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>The M Restaurant - Salad</title>
+    <link href="navBar.css" rel="stylesheet" />
+    <link href="header.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
+    <link href="menusBody.css" rel="stylesheet" />
+    <link href="cart.css" rel="stylesheet" />
+    <!-- Declaring the new font used for this project -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <!-- Icon for the title -->
+    <link rel="icon" type="image/x-icon" href="title_logo.png" />
+</head>
+<body>
+    <!-- Lets separate the header and decide what will come around here -->
+    <header>
+        <img class="header-logo" src="site_name_logo_header.png" />
+        <p>You know you want to experience the best food by the shore</p>
+    </header>
+    <!-- Declaring the navbar. It will be changed later. -->
+    <section>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a class="dropdownMenu" href="#" onclick="show_hide()">
+                    Menu
+                </a>
+            </div>
+            <a href="order.html">Order</a>
+            <div class="shopCart">
+                <a class="dropdownCart" href="#" onclick="show_hide2()">
+                    My Cart
+                </a>
+            </div>
+            <a href="login.html">Login</a>
+        </nav>
+        <div class="cartContent">
+            <table class="tbl">
+            </table>
+            <h3 class="totalCart">Empty cart</h3>
+        </div>
+        <div class="menuContent">
+            <a href="salad.html">Salad</a>
+            <a href="chicken.html">Chicken</a>
+            <a href="steak.html">Steak</a>
+            <a href="fish.html">Fish</a>
+            <a href="drink.html">Drinks</a>
+        </div>
+    </section>
+    <article>
+        <!-- First Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="1">
+                    <div class="front">
+                        <img class="menuImage" src="salad/pexels-eneida-nieves-803963 (2).jpg" id="fig1" />
+                        <figcaption class="dish">Penne Salad</figcaption>
+                        <p class="dishPrice">$13.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Penne salad with spinach, parmesan cheese, turkey, and homemade mayonnaise sauce</span>
+
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="1" title="Penne Salad" price="13.99" figId="fig1">Add to Cart</button>
+        </div>
+        <!-- End of the first Product -->
+        <!-- Second Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="2">
+                    <div class="front">
+                        <img class="menuImage" src="salad/pexels-ronmar-lacamiento-806361.jpg" id="fig2" />
+                        <figcaption class="dish">Ceasar Salad</figcaption>
+                        <p class="dishPrice">$15.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Lettuce, cherry tomato, croutons, ricotta cheese, and champignons</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="2" title="Ceasar Salad" price="15.99" figId="fig2">Add to Cart</button>
+        </div>
+        <!-- End of the second Product -->
+        <!-- Third Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="3">
+                    <div class="front">
+                        <img class="menuImage" src="salad/pexels-vo-thuy-tien-3985872.jpg" id="fig3" />
+                        <figcaption class="dish">Simple Salad</figcaption>
+                        <p class="dishPrice">$11.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Purple cabbage, tomatoes, white cabbage, and green beans</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="3" title="Simple Salad" price="11.99" figId="fig3">Add to Cart</button>
+        </div>
+        <!-- End of the third Product -->
+        <!-- Fourth Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="4">
+                    <div class="front">
+                        <img class="menuImage" src="salad/pexels-pixabay-434258.jpg" id="fig4" />
+                        <figcaption class="dish">Spicy Salad</figcaption>
+                        <p class="dishPrice">$13.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Seasoned tomatoes, cauliflower, puple onion, and shreded chichen</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="4" title="Spicy Salad" price="13.99" figId="fig4">Add to Cart</button>
+        </div>
+        <!-- End of the Fourth Product -->
+        <!-- Fifth Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="5">
+                    <div class="front">
+                        <img class="menuImage" src="salad/pexels-chan-walrus-1059905.jpg" id="fig5" />
+                        <figcaption class="dish">Mediterranean Salad</figcaption>
+                        <p class="dishPrice">$12.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Tomatoes, cucomber, olives, puple onion, and white cheese</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="5" title="Mediterranean Salad" price="12.99" figId="fig5">Add to Cart</button>
+        </div>
+        <!-- End of the Fifth Product -->
+        <!-- Sixth Product -->
+        <div class="enclosure">
+            <div class="cards">
+                <div class="product" prodId="6">
+                    <div class="front">
+                        <img class="menuImage" src="salad/pexels-sydney-troxell-718742.jpg" id="fig6" />
+                        <figcaption class="dish">Salmon Salad</figcaption>
+                        <p class="dishPrice">$16.99</p>
+                    </div>
+                    <div class="back">
+                        <span class="dishDescription">Spinach, cous-cous, seasoned salmon, white cheese, and peanuts</span>
+                    </div>
+                </div>
+            </div>
+            <button class="button" type="button" btnId="6" title="Salmon Salad" price="16.99" figId="fig6">Add to Cart</button>
+        </div>
+        <!-- End of the Sixth Product -->
+    </article>
+    <!-- The scripts -->
+    <script src="script.js"></script>
+    <script src="flipCard.js"></script>
+    <script src="dropdownClick.js"></script>
+    <footer>
+        <div class="copyrights">
+            <p><img id="footerImg" src="title_logo.png" /></p>
+            <p>&#x24B8 Copyrights by Bonnie Ives de Castro Nunes</p>
+        </div>
+    </footer>
+</body>
+</html>
